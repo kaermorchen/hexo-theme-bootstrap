@@ -13,5 +13,5 @@ git clone https://github.com/kaermorchen/hexo-theme-bootstrap themes/hexo-theme-
 Install the dependencies:
 
 ```bash
-npm i -S bootstrap@4.0.0-beta.3 hexo-renderer-scss
+npm i -S bootstrap@4.0.0-beta.3 hexo-renderer-scss highlight.js
 ```
