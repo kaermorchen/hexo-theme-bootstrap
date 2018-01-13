@@ -1,7 +1,14 @@
-<% page.posts.each(function(post){ %>
-    <%- partial('_partial/_article-preview', {post: post}) %>
-<% }) %>
+<div class="row">
+  <div class="col-9">
+    <% page.posts.each(function(post){ %>
+        <%- partial('_partial/_article-preview', {post: post}) %>
+    <% }) %>
 
-<% if (page.total > 1){ %>
-  <%- bs_paginator() %>
-<% } %>
+    <% if (page.total > 1){ %>
+      <%- bs_paginator() %>
+    <% } %>
+  </div>
+  <div class="col-3">
+    <%- bs_list_tags() %>
+  </div>
+</div>
